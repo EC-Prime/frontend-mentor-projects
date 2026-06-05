@@ -6,7 +6,7 @@ my HTML and CSS foundations, progressing toward full stack development.
 
 | Project | Difficulty | Live Demo |
 |--------|------------|-----------|
-| QR Code Component | Newbie | [Live](frontendmentorqr-component.netlify.app) |
+| QR Code Component | Newbie | [Live](https://frontendmentorqr-component.netlify.app) |
 
 
 
