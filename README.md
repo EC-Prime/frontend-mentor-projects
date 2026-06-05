@@ -1,2 +1,22 @@
 # frontend-mentor-projects
-Frontend Mentor challenges completed during my Responsive Web Design learning path — HTML &amp; CSS, progressively complex.
+A collection of Frontend Mentor challenges built while developing 
+my HTML and CSS foundations, progressing toward full stack development.
+
+## Challenges Completed
+
+| Project | Difficulty | Live Demo |
+|--------|------------|-----------|
+| QR Code Component | Newbie | [Live](#) |
+
+
+
+## Tools Used
+- HTML5
+- CSS3
+- Netlify (deployment)
+- Git & GitHub
+
+---
+
+*Part of my broader journey toward becoming a Junior Full Stack Developer.*
+*More challenges added regularly.*
