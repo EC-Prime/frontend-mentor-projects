@@ -7,7 +7,7 @@ my HTML and CSS foundations, progressing toward full stack development.
 | Project | Difficulty | Live Demo |
 |--------|------------|-----------|
 | QR Code Component | Newbie | [Live](#) |
-
+| Product Preview Component | Newbie | [Live](https://productpreviewcomp.netlify.app) |
 
 
 ## Tools Used
