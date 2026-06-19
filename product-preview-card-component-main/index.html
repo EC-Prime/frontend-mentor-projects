@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 0.6875rem; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  
+</head>
+<body>
+  <div class="card">
+    <div class="image">
+      <picture>
+  <source media="(min-width: 640px)" srcset="./images/image-product-desktop.jpg">
+  <img src="./images/image-product-mobile.jpg"/>
+</picture>
+    </div>
+    <div class="text">
+        <h3 class="title">Perfume</h3>
+        <h2 class="heading">Gabrielle Essence Eau De Parfum</h2>
+
+        <p class="description">
+          A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+          Perfumer-Creator for the House of CHANEL.
+        </p>
+        <div class="prices">
+          <p class="new-price"> $149.99</p>
+          <p class="old-price"> $169.99</p>
+        </div>
+
+        <div class="cart">
+          
+           <button>
+        <!-- Cart icon SVG from the Frontend Mentor assets -->
+        <svg width="15" height="16" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222L11.325 2.01A2.41 2.41 0 0 0 9.511 0H5.489a2.41 2.41 0 0 0-1.814.01L2.135 6.166a2.397 2.397 0 0 0-1.518 2.222v3.164A2.4 2.4 0 0 0 3.012 14h8.976a2.4 2.4 0 0 0 2.395-2.448v-3.164zM5.489 1.5h4.022c.468 0 .894.296 1.067.742L11.708 6H3.292l1.13-3.758A1.14 1.14 0 0 1 5.49 1.5zm7.394 10.052A.9.9 0 0 1 11.988 12.5H3.012a.9.9 0 0 1-.895-.948V8.388a.9.9 0 0 1 .895-.948h8.976a.9.9 0 0 1 .895.948v3.164z" fill="#FFFFFF"/>
+        </svg>
+        Add to Cart
+      </button>
+        </div>
+        
+    </div>  
+  </div>
+</body>
+</html>

@@ -1,0 +1,150 @@
+*, ::before, ::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.card{
+    width: 550px;
+    height: 400px;
+    display: flex;
+    margin: 0 auto;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 12px;
+    overflow: hidden;
+    }
+
+
+ .image img{
+    
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    flex: 1;
+    object-fit: cover;
+ }
+
+  .image{
+    flex: 1;
+  }
+
+ .text{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    padding: 32px;
+ }
+
+ .title{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: 'Montserrat' , sans-serif;
+    font-weight: 500;
+
+ }
+
+ .heading{
+    font-family: 'Fraunces' , sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: hsl(212, 21%, 14%);
+    
+ }
+
+ .prices {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+ .new-price {
+  font-family: 'Fraunces', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: hsl(158, 36%, 37%);
+}
+ 
+.old-price {
+  font-size: 0.875rem;
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 16px;
+  background-color: hsl(158, 36%, 37%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+ 
+button:hover {
+  background-color: hsl(158, 36%, 20%);
+}
+
+/* MOBILE FIRST — base styles are mobile */
+.card{
+    width: 90%;
+    max-width: 340px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+ img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* DESKTOP — kick in at 640px and above */
+@media (min-width: 640px){
+    .card{
+        max-width: 550px;
+        height: 400px;
+        flex-direction: row;
+        
+    }
+
+    picture{
+        flex: 1;
+        
+    }
+
+    picture img{
+        height: 100%;
+        border-radius: 0;
+        border-top-left-radius: 12px;
+        border-bottom-left-radius: 12px;
+    }
+
+    .text{
+        flex: 1;
+    }
+}
+
