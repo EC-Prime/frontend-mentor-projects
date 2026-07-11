@@ -1,0 +1,80 @@
+/* 1. Reset margins and padding, and fix sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+    font-family: Figtree;
+    src: url(/assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+:root{
+    --main-yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --light-grey-color: hsl(0, 0%, 42%);
+    --dark-grey-color: hsl(0, 0%, 7%);
+    --font-size: 16px;
+    --font-weight: 800;
+    --font-weight-light: 500;
+}
+
+*{
+    font-family: Figtree;
+}
+
+body{
+    background-color: var(--main-yellow);
+    padding: 50px;
+    margin: auto 400px;
+}
+
+.card{
+    width: 430px;
+    height:580px;
+    padding: 25px;
+    margin: 60px;
+    background-color: var(--white);
+    border: 1px solid var(--dark-grey-color);
+    border-radius: 3.5%;
+    box-shadow: 10px 10px 5px var(--dark-grey-color);
+    
+}
+
+.image img{
+    width: 100%;
+    border-radius: 3.5%;
+    align-items: center;
+}
+
+.tab-btn{
+    background-color: var(--main-yellow);
+    border: none;
+    border-radius: 5px;
+    font-weight: bolder;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    padding: 10px;
+}
+
+.author{
+    display:flex;
+    gap: 25px;
+    margin-top: 15px;
+    align-items: center;
+}
+
+.heading{
+    margin: 15px 0px 15px;  
+}
+
+p.text{
+    font-weight: 500;
+    color: var(--light-grey-color);
+    
+}
+
+.heading:hover{
+    color: var(--main-yellow);
+}
+
