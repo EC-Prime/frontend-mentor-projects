@@ -1,0 +1,125 @@
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+:root{
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line: hsl(215, 51%, 70%);
+    --white: hsl(0, 0%, 100%);
+    --cyan-hover: hsl(178, 100%, 50%);
+    --font-size: 18px;
+    --font-family: 'Outfit';
+}
+
+body{
+    background-color: var(--main-bg);
+    font-family: var(--font-family);
+}
+
+.card{
+    height: 530px;
+    width: 300px;
+    padding: 15px;
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    margin: 100px auto;
+}
+
+.hero-img{
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 14px; 
+}
+
+.img{
+    position: relative;
+}
+
+.hero-overlay{
+    position: absolute;
+    inset: 5px; /* matches your img padding */
+    background-color: hsl(178, 100%, 50%, 0.5);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.img:hover .hero-overlay{
+    opacity: 1;
+}
+
+.nft-txt .heading:hover{
+    color: var(--cyan-hover);
+}
+
+.nft-txt :nth-child(1){
+    color: var(--white);
+    margin: 10px auto;
+    font-weight: 600;
+}
+
+.nft-txt :nth-child(2){
+    color: var(--line);
+    margin: 14px auto;   
+}
+
+.nft-info{
+    display: flex;
+    padding-right: 5px;
+    padding-top: 10px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 20px;
+}
+
+.ETH-value{
+    margin-right: 70px;
+    padding-left: 6px;
+    color: var(--cyan-hover);
+}
+
+.duration-txt{
+    padding-left: 6px;
+    color: var(--line);
+}
+
+
+
+div .creator{
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.creator{
+    margin-top: -10px;
+}
+
+
+.creator-img{
+    margin: 5px;
+    max-width: 35px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.Author-light-txt{
+    color: var(--line);
+    margin-right: 3px;
+}
+
+.Author-Neutral-txt{
+    color: var(--white);
+}
+
+.Author-Neutral-txt:hover{
+    color: var(--cyan-hover);
+}
