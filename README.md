@@ -8,7 +8,8 @@ my HTML and CSS foundations, progressing toward full stack development.
 |--------|------------|-----------|
 | QR Code Component | Newbie | [Live](#) |
 | Product Preview Component | Newbie | [Live](https://productpreviewcomp.netlify.app) |
-| Blog Preview Component | Newbie | [Live](https://blog-product-component.netlify.app/)
+| Blog Preview Component | Newbie | [Live](https://blog-product-component.netlify.app/) |
+| Nft Card Component | Newbie | [Live](https://nft-card-component77.netlify.app) |
 
 ## Tools Used
 - HTML5
