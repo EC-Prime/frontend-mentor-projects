@@ -1,6 +1,6 @@
 # frontend-mentor-projects
 A collection of Frontend Mentor challenges built while developing 
-my HTML and CSS foundations, progressing toward full stack development.
+my HTML and CSS foundations, progressing toward full-stack development.
 
 ## Challenges Completed
 
@@ -16,7 +16,6 @@ my HTML and CSS foundations, progressing toward full stack development.
 - CSS3
 - Netlify (deployment)
 - Git & GitHub
-
 ---
 
 *Part of my broader journey toward becoming a Junior Full Stack Developer.*
