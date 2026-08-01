@@ -1,0 +1,148 @@
+*, ::before, ::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --mobile-width: 375px;
+    --desktop-width: 1440px;
+    --Font-size: 13px;
+    --purple-50: hsl(260, 100%, 95%);
+    --purple-300: hsl(264, 82%, 80%);
+    --purple-500:  hsl(263, 55%, 52%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-100: hsl(214, 17%, 92%);
+    --Grey-200: hsl(0, 0%, 81%);
+    --Grey-400: hsl(224, 10%, 45%);
+    --Grey-500: hsl(217, 19%, 35%);
+    --Dark-blue: hsl(219, 29%, 14%);
+    --Black: hsl(0, 0%, 7%);
+    --font-family: 'Barlow Semi Condensed', sans-serif;
+    
+}
+
+body{
+    font-family: var(--font-family);
+    font-size: var(--Font-size);
+}
+
+.wrapper{
+    padding: 24px;
+    margin: 0 auto;
+    width: min(100%, 900px);
+}
+
+.grid-container{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+        "item1 item1 item2 item5"
+        "item1 item1 item2 item5"
+        "item3 item4 item4 item5"
+        "item3 item4 item4 item5";
+}
+
+@media (max-width: 599px) {
+    .wrapper {
+        padding: 20px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "item1"
+            "item2"
+            "item3"
+            "item4"
+            "item5";
+    }
+}
+
+.card-1{
+    grid-area: item1;
+    background-color: var(--purple-500);
+    position: relative;
+}
+
+.card-2{
+    grid-area: item2;
+    background-color: var(--Grey-500);
+}
+
+.card-3{
+    grid-area: item3;
+}
+
+.card-4{
+    grid-area: item4;
+    background: var(--Dark-blue);
+}
+
+.card-5{
+    grid-area: item5;
+    background: var(--White);
+}
+
+.grid-container [class^="card-"] {
+  border-radius: 6px;
+  padding: 18px;
+  box-shadow: 3px 3px 30px -5px #000000;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card-1, .card-2, .card-4{
+    color: var(--White); 
+}
+
+.profile-section{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.bg-symbol{
+    position: absolute;
+    opacity: 0.6;
+    top: 0;
+    right: 24px;
+    
+    
+} 
+
+.profile-section img{
+    border-radius: 50%;
+    border: 2px solid var(--White);
+    height: 40px;
+}
+
+.card-4 img{
+    border: 1px solid var(--purple-500);
+}
+
+.card-3 img, .card-5 img{
+ border: 1px solid var(--Black);
+}
+
+.testimonial{
+    font-weight: 200;
+    margin-bottom: 2px;
+    height: 100%;
+}
+
+.student-type{
+    font-weight: 200; 
+}
+
+.student-name{
+    font-weight: 600; 
+}
+
+
+
+
+
+
