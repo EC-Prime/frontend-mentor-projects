@@ -9,80 +9,111 @@
   <title>Frontend Mentor | Hotel booking confirmation page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+ 
 </head>
 <body>
+<div class="container">
+  <nav  class="side-nav-bar">
+    Maison Soleil
 
-  <!-- Sidebar starts -->
+    <!-- Guest navigation -->
+    Your stay
+    1
+    The house
+    Around town
+    Breakfast
+    Messages
 
-  Maison Soleil
+    <!-- Local weather -->
+    Today in Cassis
+    27°
+    Sunny · light breeze
 
-  <!-- Guest navigation -->
-  Your stay
-  1
-  The house
-  Around town
-  Breakfast
-  Messages
-
-  <!-- Local weather -->
-  Today in Cassis
-  27°
-  Sunny · light breeze
-
-  Est. 1987
-  Maison Soleil · 12 Rue des Oliviers · Cassis
-  © 2026 Maison Soleil
-
-  <!-- Sidebar ends -->
+    Est. 1987
+    Maison Soleil · 12 Rue des Oliviers · Cassis
+    © 2026 Maison Soleil
+    <hr>
+    <!-- Sidebar ends -->
+  </nav>
+ 
 
   <!-- Main content starts -->
 
-  Booking · Confirmed
-  Bienvenue, Lucia.
+  <p>Booking · Confirmed</p>
+  <h1>Bienvenue, Lucia.</h1>
 
-  Print receipt
-  Add to calendar
+  <button type="button" class="print-btn">Print receipt</button>
+  <button type="button" class="add-btn">Add to calendar</button>
 
   <!-- Booking cards start -->
 
   <!-- Receipt card -->
-  Receipt
-  № MS-2026
-  0421-AH
+   <div class="receipt-card">
+    <p class="receipt-txt"> Receipt</p>
+  
+    <div class="serial-number">
+      <p>№ MS-2026</p>
+      <p>0421-AH</p>
+    </div>
 
-  Your stay
+    <h2>Your stay</h2>
+    <div class="dates-grid">
+      <div class="check-in">
+        <p>Check in</p>
+        <p>25 Apr</p>
+        <p>Saturday · 15:00</p>
+      </div>
 
-  Check in
-  25 Apr
-  Saturday · 15:00
+      <div class="check-out">
+        <p>Check out</p>
+        <p>29 Apr</p>
+        <p>Wednesday · 11:00</p>
+      </div>
+      <hr>
+    </div>
+  
+    <div class="items-flex">
+      <div class="item-1">
+        <p class="item-name">Room· La Garrigue · 4 nights</p> 
+        <p class="price">€ 620.00</p>
+      </div>
 
-  Check out
-  29 Apr
-  Wednesday · 11:00
+      <div class="item-2">
+        <p class="item">Breakfast · 2 guests</p>
+        <p class="price">€ 96.00</p>
+      </div>
 
-  Room · La Garrigue · 4 nights
-  € 620.00
-  Breakfast · 2 guests
-  € 96.00
-  Tourist tax
-  € 14.40
+      <div class="item-3">
+        <p class="item">Tourist tax</p>
+        <p class="price">€ 14.40</p>
+        <hr>
+      </div>
+    </div>
+    <div class="receipt-footer">
+      <p class="total">Total paid</p>
+      <p class="total-price">€ 730.40</p>
 
-  Total paid
-  € 730.40
+      <p>Paid · Wise · GBP</p>
 
-  Paid · Wise · GBP
-  <!-- Barcode image -->
+      <!-- Barcode image -->
+      <img src="/assets/images/icon-barcode.svg" alt="" class="barcode">
+      </div>
+  </div>  
 
   <!-- Note from host card -->
-  Welcome
-  A note from your host, Margaux.
-  We're so glad you're coming. The shutters will be open, the lemonade cold, and the cat - Poivre - pretending not to notice you.
-  Room
-  La Garrigue
+   <div class="welcome-card">
+    <hr class="dotted-line">
+      <p class="welcome-txt">Welcome Card</p>
+     <img src="/assets/images/icon-sun.svg" alt="Sun icon" class="sun-icon">
+      <div class="note">
+      <p class="note-heder">A note from your host,</p>
+      <p class="host-name">Margaux.</p>
+      <p class="note-txt">We're so glad you're coming. The shutters will be open, the lemonade cold, and the cat - Poivre - pretending not to notice you.</p>
+      <p class="room">Room</p>
+      <p class="room-name">La Garrigue</p>
+    </div>
+   </div>
+  
 
   <!-- Booking cards end -->
 
@@ -116,10 +147,10 @@
   <!-- Guest info row ends -->
 
   <!-- Main content ends -->
+</div>
+  <!-- Sidebar starts -->
+  
 
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </footer>
+  
 </body>
 </html>
