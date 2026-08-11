@@ -13,29 +13,58 @@
 </head>
 <body>
 <div class="container">
-  <nav  class="side-nav-bar">
-    <!-- Sidebar starts -->  
-    Maison Soleil
+  <div class="page">
+    <aside id="sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <a href="#" class="logo">
+                <img src="images/icon-sun.svg" alt="">
+                <span>Maison <strong>Soleil</strong></span>
+            </a>
+            <button id="menu-close" class="menu-close" aria-label="Close menu">
+                <img src="images/icon-close-menu.svg" alt="">
+            </button>
+        </div>
 
-    <!-- Guest navigation -->
-    Your stay
-    1
-    The house
-    Around town
-    Breakfast
-    Messages
+        <nav aria-label="Primary">
+            <ul class="nav-list">
+                <li><a href="#" class="nav-link active">Your stay <span class="badge">1</span></a></li>
+                <li><a href="#" class="nav-link">The house</a></li>
+                <li><a href="#" class="nav-link">Around town</a></li>
+                <li><a href="#" class="nav-link">Breakfast</a></li>
+                <li><a href="#" class="nav-link">Messages</a></li>
+            </ul>
+        </nav>
 
-    <!-- Local weather -->
-    Today in Cassis
-    27°
-    Sunny · light breeze
+        <div class="weather-card">
+            <p class="weather-label">Today in Cassis</p>
+            <p class="weather-temp">27°</p>
+            <p class="weather-desc">Sunny · light breeze</p>
+            <hr>
+        </div>
 
-    Est. 1987
-    Maison Soleil · 12 Rue des Oliviers · Cassis
-    © 2026 Maison Soleil
-    <hr>
-    <!-- Sidebar ends -->
-  </nav>
+        <div class="sidebar-footer">
+            <p>Est. 1987</p>
+            <p>Maison Soleil · 12 Rue des Oliviers · Cassis</p>
+            <p>© 2026 Maison Soleil</p>
+        </div>
+    </aside>
+
+    <div class="overlay" id="overlay"></div>
+
+    <header class="mobile-header">
+        <a href="#" class="logo">
+            <img src="/assets/images/illustration-sun.svg" alt="">
+            <span>Maison <strong>Soleil</strong></span>
+        </a>
+        <button id="menu-open" class="menu-open" aria-label="Open menu" aria-expanded="false" aria-controls="sidebar">
+            <img src="/assets/images/icon-menu.svg" alt="">
+        </button>
+    </header>
+
+    <main>
+        <!-- Bienvenue, Lucia section, cards, etc. -->
+    </main>
+</div>
  
 
   <!-- Main content starts -->
