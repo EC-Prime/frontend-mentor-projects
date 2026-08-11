@@ -8,12 +8,13 @@
 
   <title>Frontend Mentor | Hotel booking confirmation page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  
  
 </head>
 <body>
 <div class="container">
   <nav  class="side-nav-bar">
+    <!-- Sidebar starts -->  
     Maison Soleil
 
     <!-- Guest navigation -->
@@ -96,7 +97,7 @@
       <p>Paid · Wise · GBP</p>
 
       <!-- Barcode image -->
-      <img src="/assets/images/icon-barcode.svg" alt="" class="barcode">
+      <img src="/assets/images/icon-barcode.svg" alt="barcode image" class="barcode">
       </div>
   </div>  
 
@@ -113,44 +114,57 @@
       <p class="room-name">La Garrigue</p>
     </div>
    </div>
-  
 
-  <!-- Booking cards end -->
+    <!-- Guest info row ends -->
+   <div class="feature-cards-flex">
+     <!-- Wifi -->
+      <div class="feature-card-1">
+          <!-- Arrival -->
+        <div class="top-row">
+            <h3>Arrival</h3>
+            <h3>01</h3>
+        </div>
+            <h2>Check-in from 15:00</h2>
+            <p class="sub-txt">Sat, 25 April</p>
+            <p>Ring the brass bell by the blue door. If we're at the market, the key is in the terracotta pot by the olive tree.</p>
+      </div>
+      
+      <div class="feature-card-2">
+        <div class="top-row">
+          <img src="/assets/images/icon-wifi.svg" alt="Wifi Icon">
+          <h3>Wifi</h3>
+          <h3>02</h3>
+        </div>
+      </div>
 
-  <!-- Guest info row starts -->
+      <h2>Le Soleil · Guest</h2>
+      <p class="sub-txt">Password below</p>
+      <div class="bottom-row-wifi">
+        <div class="network">
+          <p>Network</p>
+          <p>Le Soleil · Guest</p>
+        </div>
+        <div class="passowrd">
+          <p>Password</p>
+          <p>soleil-2026</p>
+          <button class="copy-btn"> Copy</button>
+        </div>
+      </div>
+      
+      <!-- Breakfast -->
+       <div class="feature-card-3">
+        <div class="top-row">
+          <img src="/assets/images/icon-breakfast.svg" alt="Breakfast Plate">
+          <h3>Breakfast</h3>
+          <h3>03</h3>
+        </div>
 
-  <!-- Arrival -->
-  Arrival
-  01
-  Check-in from 15:00
-  Sat, 25 April
-  Ring the brass bell by the blue door. If we're at the market, the key is in the terracotta pot by the olive tree.
-
-  <!-- Wifi -->
-  Wifi
-  02
-  Le Soleil · Guest
-  Password below
-  Network
-  Le Soleil · Guest
-  Password
-  soleil-2026
-  Copy
-
-  <!-- Breakfast -->
-  Breakfast
-  03
-  Served 8 - 10:30
-  On the terrace
-  Fresh figs, Marseille honey, pain au levain, and espresso. Gluten-free option? Leave a note the night before.
-
-  <!-- Guest info row ends -->
-
-  <!-- Main content ends -->
+        <h2>Served 8 - 10:30</h2>
+        <p class="sub-txt">On the terrace</p>
+        <p>Fresh figs, Marseille honey, pain au levain, and espresso. Gluten-free option? Leave a note the night before.</p>
+       </div>
+      <!-- Main content ends -->
+   </div> 
 </div>
-  <!-- Sidebar starts -->
-  
-
-  
 </body>
 </html>
