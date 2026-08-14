@@ -39,5 +39,66 @@
     --font-family-1: 'Fraunces', serif;
     --font-famiyl-2: 'DM Sans', serif;
     --font-family-3: 'DM Mono', serif;
+}
 
+body{
+    padding: 22px;
+    margin: 0 auto;
+    width: 375px;
+    background-color: var(--Neutral-200);
+   
+}
+
+.hero-section{
+    padding-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.hero-section p{
+    text-transform: uppercase;
+    font-family: var(--font-family-3);
+    letter-spacing: 0.2rem;
+    color: rgb(100, 98, 98);
+    font-weight: 400;
+    font-size: 10px;
+    
+    
+}
+
+.hero-section h1{
+    font-family: var(--font-family-1);
+    font-weight: 500;
+}
+.Lucia{
+    color: var(--Terracotta-700);
+    font-style: italic;
+}
+
+.main-btns{
+    display: flex;
+    padding: 10px 0;
+    justify-content: center;
+    gap: 22px;
+}
+
+.main-btns button{
+    padding:  10px 14px;
+    width: 100%;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 22px;
+    font-family: var(--font-famiyl-2);
+    
+}
+
+.print-btn{
+    background-color: var(--Neutral-200);
+    border-color: rgba(128, 128, 128, 0.4);
+}
+
+.add-btn{
+    color: var(--Neutral-0);
+    background-color: black;
 }
