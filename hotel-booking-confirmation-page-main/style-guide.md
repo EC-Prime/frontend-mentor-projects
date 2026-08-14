@@ -60,4 +60,4 @@ The designs were created to the following widths:
 - Family: [DM Mono](https://fonts.google.com/specimen/DM+Mono)
   - Weights: 400, 500
 
-> 💎 [Upgrade to Pro](https://www.frontendmentor.io/pro?ref=style-guide) for design file access to see all design details and get hands-on experience using a professional workflow with tools like Figma. The design file for this challenge also includes a design system and tablet layout to help you build a more accurate solution faster.
+

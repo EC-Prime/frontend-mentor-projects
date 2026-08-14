@@ -3,25 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
 
   <title>Frontend Mentor | Hotel booking confirmation page</title>
 
-  
- 
 </head>
 <body>
 <div class="container">
   <div class="page">
-    <aside id="sidebar" class="sidebar">
+    <main>
+      <aside id="sidebar" class="sidebar">
         <div class="sidebar-header">
             <a href="#" class="logo">
-                <img src="images/icon-sun.svg" alt="">
+                <img src="/assets/images/icon-sun.svg" alt="">
                 <span>Maison <strong>Soleil</strong></span>
             </a>
             <button id="menu-close" class="menu-close" aria-label="Close menu">
-                <img src="images/icon-close-menu.svg" alt="">
+                <img src="assets/images/icon-close-menu.svg" alt="">
             </button>
         </div>
 
@@ -59,24 +61,20 @@
         <button id="menu-open" class="menu-open" aria-label="Open menu" aria-expanded="false" aria-controls="sidebar">
             <img src="/assets/images/icon-menu.svg" alt="">
         </button>
-    </header>
-
-    <main>
-        <!-- Bienvenue, Lucia section, cards, etc. -->
-    </main>
+    </header> 
 </div>
- 
-
-  <!-- Main content starts -->
-
-  <p>Booking · Confirmed</p>
-  <h1>Bienvenue, Lucia.</h1>
-
-  <button type="button" class="print-btn">Print receipt</button>
-  <button type="button" class="add-btn">Add to calendar</button>
-
+<!--After navbar section-->
+  <div class="hero-section">
+      <p>Booking · Confirmed</p>
+      <h1>Bienvenue, Lucia.</h1>
+      <div class="main-btns">
+        <button type="button" class="print-btn">Print receipt</button>
+        <button type="button" class="add-btn">Add to calendar</button>
+      </div>
+  </div>
+  
+  
   <!-- Booking cards start -->
-
   <!-- Receipt card -->
    <div class="receipt-card">
     <p class="receipt-txt"> Receipt</p>
@@ -122,26 +120,24 @@
     <div class="receipt-footer">
       <p class="total">Total paid</p>
       <p class="total-price">€ 730.40</p>
-
       <p>Paid · Wise · GBP</p>
-
       <!-- Barcode image -->
       <img src="/assets/images/icon-barcode.svg" alt="barcode image" class="barcode">
-      </div>
+    </div>
   </div>  
 
   <!-- Note from host card -->
    <div class="welcome-card">
     <hr class="dotted-line">
       <p class="welcome-txt">Welcome Card</p>
-     <img src="/assets/images/icon-sun.svg" alt="Sun icon" class="sun-icon">
-      <div class="note">
-      <p class="note-heder">A note from your host,</p>
-      <p class="host-name">Margaux.</p>
-      <p class="note-txt">We're so glad you're coming. The shutters will be open, the lemonade cold, and the cat - Poivre - pretending not to notice you.</p>
-      <p class="room">Room</p>
-      <p class="room-name">La Garrigue</p>
-    </div>
+      <img src="/assets/images/icon-sun.svg" alt="Sun icon" class="sun-icon">
+        <div class="note">
+          <p class="note-heder">A note from your host,</p>
+          <p class="host-name">Margaux.</p>
+          <p class="note-txt">We're so glad you're coming. The shutters will be open, the lemonade cold, and the cat - Poivre - pretending not to notice you.</p>
+          <p class="room">Room</p>
+          <p class="room-name">La Garrigue</p>
+      </div>
    </div>
 
     <!-- Guest info row ends -->
@@ -150,8 +146,9 @@
       <div class="feature-card-1">
           <!-- Arrival -->
         <div class="top-row">
-            <h3>Arrival</h3>
-            <h3>01</h3>
+          <img src="/assets/images/icon-key.svg" alt="" srcset="">
+            <p>Arrival</p>
+            <p>01</p>
         </div>
             <h2>Check-in from 15:00</h2>
             <p class="sub-txt">Sat, 25 April</p>
@@ -161,31 +158,31 @@
       <div class="feature-card-2">
         <div class="top-row">
           <img src="/assets/images/icon-wifi.svg" alt="Wifi Icon">
-          <h3>Wifi</h3>
-          <h3>02</h3>
+          <p>Wifi</p>
+          <p>02</p>
         </div>
-      </div>
 
-      <h2>Le Soleil · Guest</h2>
-      <p class="sub-txt">Password below</p>
-      <div class="bottom-row-wifi">
-        <div class="network">
-          <p>Network</p>
-          <p>Le Soleil · Guest</p>
-        </div>
+        <h2>Le Soleil · Guest</h2>
+          <p class="sub-txt">Password below</p>
+        <div class="bottom-row-wifi">
+          <div class="network">
+            <p>Network</p>
+            <p>Le Soleil · Guest</p>
+          </div>
         <div class="passowrd">
           <p>Password</p>
           <p>soleil-2026</p>
           <button class="copy-btn"> Copy</button>
         </div>
       </div>
+    </div>
       
       <!-- Breakfast -->
        <div class="feature-card-3">
         <div class="top-row">
           <img src="/assets/images/icon-breakfast.svg" alt="Breakfast Plate">
-          <h3>Breakfast</h3>
-          <h3>03</h3>
+          <p>Breakfast</p>
+          <p>03</p>
         </div>
 
         <h2>Served 8 - 10:30</h2>
@@ -193,7 +190,9 @@
         <p>Fresh figs, Marseille honey, pain au levain, and espresso. Gluten-free option? Leave a note the night before.</p>
        </div>
       <!-- Main content ends -->
-   </div> 
+   </div>
+    </main>
+     
 </div>
 </body>
 </html>
