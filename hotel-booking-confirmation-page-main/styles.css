@@ -255,8 +255,11 @@ body{
     justify-content: space-between;
     margin-bottom: 10px;
     font-family: var(--font-family-3);
-    font-size: 14px;
+    font-size: 12px;
+    font-weight: 400;
+    gap: 12px;
     color: rgb(27, 27, 27);
+    white-space: nowrap;
 }
 
 .item-3{
