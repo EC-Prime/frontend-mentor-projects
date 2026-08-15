@@ -104,7 +104,7 @@ body{
     background-color: var(--Terracotta-600);
     border-radius: 16px;
     padding: 22px;
-    width: 390px;
+    width: 100%;
     height: 460px;
     position: relative;
     transform: rotate(2deg);
@@ -125,6 +125,7 @@ body{
 .sun-icon{
     position: absolute;
     margin-bottom: 12px;
+    top: 60px;
     right: 20px;
 }
     
@@ -175,8 +176,9 @@ body{
 }
 
 .receipt-card{
-    width: 390px;
-    height: 460px;
+    background-color: var(--Neutral-0);
+    width: 100%;
+    height: 100%;
     margin-top: 32px;
     margin-bottom: 24px;
     border-radius: 16px;
@@ -219,11 +221,12 @@ body{
     justify-content: space-between;
     margin-bottom: 18px;
     text-align: center;
+    border-bottom: 1px dashed rgba(56, 51, 51, 0.2);
 }
 
 .check-in{
     padding-bottom: 22px;
-    border-bottom: 1px dashed rgba(56, 51, 51, 0.2);
+    
 }
 
 .check-in p:first-of-type, .check-out p:first-of-type{
@@ -281,7 +284,7 @@ body{
 .total-price{
     margin-top: 12px;
     font-family: var(--font-family-1);
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
 .receipt-barc{
