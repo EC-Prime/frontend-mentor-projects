@@ -46,7 +46,6 @@ body{
     margin: 0 auto;
     width: 375px;
     background-color: var(--Neutral-200);
-   
 }
 
 .hero-section{
@@ -106,7 +105,7 @@ body{
     border-radius: 16px;
     padding: 22px;
     width: 390px;
-    height: 440px;
+    height: 460px;
     position: relative;
     transform: rotate(2deg);
     margin-top: 20px;
@@ -177,11 +176,13 @@ body{
 
 .receipt-card{
     width: 390px;
-    height: 440px;
-    margin-top: 28px;
-    border:1px solid rgba(128, 128, 128, 0.4); 
+    height: 460px;
+    margin-top: 32px;
+    margin-bottom: 24px;
     border-radius: 16px;
+    box-shadow: -7px 5px 20px -5px #000000;
     padding: 22px;
+    transform: rotate(-2deg);
 }
 
 .receipt-txt{
@@ -220,13 +221,18 @@ body{
     text-align: center;
 }
 
+.check-in{
+    padding-bottom: 22px;
+    border-bottom: 1px dashed rgba(56, 51, 51, 0.2);
+}
+
 .check-in p:first-of-type, .check-out p:first-of-type{
     color: rgb(85, 84, 84);
     font-size: 12px;
     text-transform: uppercase;
     font-family: var(--font-family-3);
     padding-bottom: 12px;
-     letter-spacing: 1.5px;
+    letter-spacing: 1.5px;
 }
 
 .check-in p:nth-of-type(2), .check-out p:nth-of-type(2){
@@ -248,10 +254,46 @@ body{
     font-family: var(--font-family-3);
     font-size: 14px;
     color: rgb(27, 27, 27);
-    
 }
 
 .item-3{
     padding-bottom: 22px;
     border-bottom: 1px solid rgba(27, 27, 27, 0.8);
+}
+
+.receipt-footer{
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--font-family-3);
+    align-items: center;
+    
+}
+
+.total{
+    margin-top: 12px;
+    text-transform: uppercase;
+    color: rgb(85, 84, 84);
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-family: var(--font-family-3);
+}
+
+.total-price{
+    margin-top: 12px;
+    font-family: var(--font-family-1);
+    font-size: 2rem;
+}
+
+.receipt-barc{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+    align-items: center;
+}
+
+.receipt-barc p{
+    color: rgb(85, 84, 84);
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: var(--font-family-3);
 }
