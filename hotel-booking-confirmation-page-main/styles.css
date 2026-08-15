@@ -37,7 +37,7 @@
     /*Fonts*/
     --Font-size: 14px;
     --font-family-1: 'Fraunces', serif;
-    --font-famiyl-2: 'DM Sans', serif;
+    --font-family-2: 'DM Sans', serif;
     --font-family-3: 'DM Mono', serif;
 }
 
@@ -87,8 +87,8 @@ body{
     font-weight: 600;
     text-align: center;
     border-radius: 22px;
-    font-family: var(--font-famiyl-2);
-    
+    font-family: var(--font-family-2);
+    margin-bottom: 20px;
 }
 
 .print-btn{
@@ -102,21 +102,78 @@ body{
 }
 
 .welcome-card{
-    margin-top: 25px;
     background-color: var(--Terracotta-600);
-    border-radius: 12px;
-    padding: 18px;
+    border-radius: 16px;
+    padding: 22px;
+    width: 350px;
+    height: 410px;
+    position: relative;
+    transform: rotate(2deg);
+    margin-top: 20px;
+    
 }
 
 .welcome-txt{
-    margin-top: 18px;
+    border-top: 1px dashed rgba(255, 255, 255, 0.3);
+    margin-top: 14px;
+    padding-top: 12px;
     text-transform: uppercase;
-    color: var(--Neutral-0);
+    color: var(--Neutral-400);
     font-family: var(--font-family-3);
     font-size: 10px;
     letter-spacing: 1.5px;
+    
 }
 
 .sun-icon{
-    margin-right: 0;
+    position: absolute;
+    margin-bottom: 12px;
+    right: 20px;
+}
+    
+
+.note{
+    margin-top: 48px;
+    margin-bottom: px;
+}
+
+.note-header{
+    font-size: larger;
+    color: var(--Sun-300);
+    font-family: var(--font-family-1);
+    font-style: italic;
+    margin-bottom: 8px;
+}
+
+.host-name{
+    font-family: var(--font-family-1);
+    font-style: italic;
+    color: var(--Neutral-400);
+    margin-bottom: 16px;
+    margin-left: 6px;
+    font-size: 2rem;
+}
+
+.note-txt{
+    font-family: var(--font-family-2);
+    color: var(--Neutral-400);
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.room-info{
+    margin-top: 82px;
+    color: var(--Neutral-400);
+}
+
+.room{
+    text-transform: uppercase;
+    font-family: var(--font-family-2);
+    font-size: 10px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.room-name{
+    font-size: 1.4rem;
 }
