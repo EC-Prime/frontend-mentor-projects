@@ -98,19 +98,18 @@ body{
 
 .add-btn{
     color: var(--Neutral-0);
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 }
 
 .welcome-card{
     background-color: var(--Terracotta-600);
     border-radius: 16px;
     padding: 22px;
-    width: 350px;
-    height: 410px;
+    width: 390px;
+    height: 440px;
     position: relative;
     transform: rotate(2deg);
     margin-top: 20px;
-    
 }
 
 .welcome-txt{
@@ -122,7 +121,6 @@ body{
     font-family: var(--font-family-3);
     font-size: 10px;
     letter-spacing: 1.5px;
-    
 }
 
 .sun-icon{
@@ -134,7 +132,6 @@ body{
 
 .note{
     margin-top: 48px;
-    margin-bottom: px;
 }
 
 .note-header{
@@ -162,7 +159,7 @@ body{
 }
 
 .room-info{
-    margin-top: 82px;
+    margin-top: 120px;
     color: var(--Neutral-400);
 }
 
@@ -176,4 +173,85 @@ body{
 
 .room-name{
     font-size: 1.4rem;
+}
+
+.receipt-card{
+    width: 390px;
+    height: 440px;
+    margin-top: 28px;
+    border:1px solid rgba(128, 128, 128, 0.4); 
+    border-radius: 16px;
+    padding: 22px;
+}
+
+.receipt-txt{
+    text-transform: uppercase;
+    font-family: var(--font-family-2);
+    font-size: 12px;
+    letter-spacing: 1.1px;
+    color: rgb(85, 84, 84);
+}
+
+.receipt-header{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 16px;
+    border-bottom :1px dashed rgba(56, 51, 51, 0.2);
+    margin-bottom: 18px;
+}
+
+.receipt-left h2{
+    font-family: var(--font-family-1);
+    font-weight: normal;
+}
+
+.receipt-right{
+    color: rgb(85, 84, 84);
+    font-family: var(--font-family-3);
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-align: right
+}
+
+.dates-flex{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+.check-in p:first-of-type, .check-out p:first-of-type{
+    color: rgb(85, 84, 84);
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: var(--font-family-3);
+    padding-bottom: 12px;
+     letter-spacing: 1.5px;
+}
+
+.check-in p:nth-of-type(2), .check-out p:nth-of-type(2){
+    font-family: var(--font-family-1);
+    font-size: 2rem;
+}
+
+.check-in p:nth-of-type(3), .check-out p:nth-of-type(3){
+    font-family: var(--font-family-2);
+    color: rgb(85, 84, 84);
+    font-size: 14px;
+    margin-top: 3px;
+}
+
+.item-1,.item-2,.item-3{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-family: var(--font-family-3);
+    font-size: 14px;
+    color: rgb(27, 27, 27);
+    
+}
+
+.item-3{
+    padding-bottom: 22px;
+    border-bottom: 1px solid rgba(27, 27, 27, 0.8);
 }
