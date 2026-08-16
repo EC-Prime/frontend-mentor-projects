@@ -319,7 +319,6 @@ body{
     display: flex;
     font-size: 0.9rem;
     align-items: center;
-    
 }
 
 .feature{
@@ -336,4 +335,15 @@ body{
 }
 .feature-card-1 .top-row{
     color: var(--Terracotta-600);
+}
+
+.feature-card-1 .feature-icon-img{
+    background-color: var(--Terracotta-600);
+}
+
+.feature-icon-img{
+    height: 40px;
+    padding: 8px;
+    border-radius: 10px;
+    margin-right: 6px;
 }
