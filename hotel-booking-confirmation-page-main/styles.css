@@ -310,8 +310,8 @@ body{
     border-radius: 16px;
     margin-top: 22px;
     padding: 12px;
-    padding-top: 22px;
-    height: 225px;
+    padding-top: 16px;
+    height: 230px;
     border: 1px solid rgba(190, 187, 187, 0.9);
 }
 
@@ -319,12 +319,13 @@ body{
     display: flex;
     font-size: 0.9rem;
     align-items: center;
+    
 }
 
 .feature{
     margin-right: auto;
     text-transform: uppercase;
-    font-family: var(--font-family-2);
+    font-family: var(--font-family-3);
     letter-spacing: 1.5px;
     font-weight: 500;
 }
@@ -335,6 +336,11 @@ body{
 }
 .feature-card-1 .top-row{
     color: var(--Terracotta-600);
+    
+}
+
+.top-row{
+    margin-bottom: 20px;
 }
 
 .feature-card-1 .feature-icon-img{
@@ -350,13 +356,72 @@ body{
 
 .paragraph-txt{
     font-family: var(--font-family-2);
-    margin-top: 22px;
+    margin-top: 16px;
     color: rgb(70, 69, 69);
     font-size: smaller;
 }
 
 .sub-txt{
     font-family: var(--font-family-2);
-    color: var(--Light-grey-1); 
-    
+    color: var(--Light-grey-1);
+    margin-top: 6px;
+    font-size: small;
+}
+
+.feature-card-2 .sub-txt {
+    margin-bottom: 6px;
+}
+
+.feature-card-2 .top-row{
+    color: var(--Blue-500);
+}
+
+.feature-card-2 .feature-icon-img{
+    background-color: var(--Blue-500);
+}
+.feature-cards-flex h2{
+    font-family: var(--font-family-1);
+    font-weight: normal;
+}
+
+.network, .password{
+    display: flex;
+    background-color: var(--Neutral-200);
+    border-radius: 9px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+.net,  .pass{
+    margin-right: auto;
+    color: rgb(80, 78, 78);
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: var(--font-family-3);
+    letter-spacing: 1.5px;
+}
+
+.net-name, .pass-name{
+    font-family: var(--font-family-2);
+    font-size: 0.9rem;
+}
+
+.copy-btn{
+    margin-left: 10px;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    border-radius: 12px;
+    width: 15%;
+    padding: 2px;
+    color: rgb(124, 119, 119);
+    background-color: var(--Neutral-200);
+    border: 1px solid rgba(70, 69, 69, 0.3);
+}
+
+.feature-card-3 .top-row{
+    color: var(--Rose-500);
+}
+
+.feature-card-3 .feature-icon-img{
+    background-color: var(--Rose-500);
 }
