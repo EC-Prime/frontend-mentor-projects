@@ -456,7 +456,6 @@ body{
 .nav-list{
     list-style-type: none;
     flex-direction: column;
-       
 }
 
 .nav-list a{
@@ -519,12 +518,27 @@ body{
     border-radius: 50%;
     display: inline-flex;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: center; 
 }
 .nav-link {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex: 1;
+}
+
+.weather-card{
+    margin-top: auto;
+    color: rgb(85, 84, 84);
+    font-family: var(--font-family-2);
+}
+
+.sidebar-footer{
+    color: rgb(85, 84, 84);
+    font-family: var(--font-family-2);
+
+}
+
+.weather-label{
+    text-transform: uppercase;
 }
