@@ -25,7 +25,7 @@
                 <p>Soleil</p>
               </div>
             
-              <button id="menuClose"  onclick= closeSidebar() class="menu-close menu-btn" aria-label="Close menu">
+              <button  id="menu-close" aria-label="Close menu">
                   <img src="assets/images/icon-close.svg" alt="Close menu button">
               </button>
           </div>
@@ -210,11 +210,26 @@
       </main>
   </div>
   <script>
-    function closeSidebar(){
-      const menuClose = document.querySelector('.menuClose')
-      const sidebar = document.querySelector('.sidebar')
-      sidebar.style.display = 'none'
+    const sidebar = document.querySelector('.sidebar');
+    const overlay = document.querySelector('.overlay');
+    const menuOpenBtn = document.getElementById('menu-open');
+    const menuCloseBtn = document.getElementById('menu-close');
+
+    function openSidebar() {
+        sidebar.classList.add('open');
+        overlay.classList.add('open');
+        menuOpenBtn.setAttribute('aria-expanded', 'true');
     }
-  </script>
+
+    function closeSidebar() {
+        sidebar.classList.remove('open');
+        overlay.classList.remove('open');
+        menuOpenBtn.setAttribute('aria-expanded', 'false');
+    }
+
+    menuOpenBtn.addEventListener('click', openSidebar);
+    menuCloseBtn.addEventListener('click', closeSidebar);
+    overlay.addEventListener('click', closeSidebar);
+</script>
 </body>
 </html>
