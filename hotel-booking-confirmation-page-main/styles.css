@@ -157,7 +157,6 @@ body{
     color: var(--Neutral-400);
     font-size: 0.9rem;
     font-weight: 300;
-   
 }
 
 .room-info{
@@ -473,12 +472,16 @@ body{
     margin-right: 12px;
 }
 
-.sidebar-header{
+.sidebar-header, .mobile-header{
     display: flex;
     align-items: center;
     margin-bottom: 22px;
     padding-bottom: 18px;
     border-bottom: 1px solid rgba(190, 187, 187, 0.9);
+}
+
+.mobile-header{
+    width: 100%;
 }
 
 .sun-logo-img{
@@ -495,10 +498,11 @@ body{
     font-size: larger;
     font-style: italic;
 }
-.menu-close{
+.menu-close, .menu-btn{
     background-color: var(--Neutral-50);
     border-radius: 4px;
-    padding: 2px;
+    padding: 5px;
+    justify-content: center;
     border:1px solid rgba(128, 128, 128, 0.4);
 }
 .logo-txt p:nth-of-type(2){

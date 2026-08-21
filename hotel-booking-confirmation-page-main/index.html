@@ -25,7 +25,7 @@
                 <p>Soleil</p>
               </div>
             
-              <button id="menu-close" class="menu-close" aria-label="Close menu">
+              <button id="menuClose"  onclick= closeSidebar() class="menu-close menu-btn" aria-label="Close menu">
                   <img src="assets/images/icon-close.svg" alt="Close menu button">
               </button>
           </div>
@@ -58,10 +58,13 @@
 
       <header class="mobile-header">
           <a href="#" class="logo">
-            <img src="/assets/images/illustration-sun.svg" alt="">
-            <span>Maison <strong>Soleil</strong></span>
+            <img src="/assets/images/illustration-sun.svg" class="sun-logo-img" alt="">
           </a>
-          <button id="menu-open" class="menu-open" aria-label="Open menu" aria-expanded="false" aria-controls="sidebar">
+          <div class="logo-txt">
+                <p>Maison</p>
+                <p>Soleil</p>
+              </div>
+          <button id="menu-open" class="menu-open menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="sidebar">
               <img src="/assets/images/icon-menu.svg" alt="">
           </button>
       </header> 
@@ -205,7 +208,13 @@
     </div>
     </div>
       </main>
-      
   </div>
+  <script>
+    function closeSidebar(){
+      const menuClose = document.querySelector('.menuClose')
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+  </script>
 </body>
 </html>
