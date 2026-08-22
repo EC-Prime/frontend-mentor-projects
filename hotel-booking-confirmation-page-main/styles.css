@@ -609,25 +609,32 @@ body{
 
     .sidebar {
         position: static;
+        width: 260px;
         height: auto;
         min-height: 100vh;
+        padding: 16px;
         transform: none;
         flex-shrink: 0;
+        border-right: 1px solid rgba(190, 187, 187, 0.9);
     }
 
-    .menu-close {
+    #menu-close {
         display: none;
     }
 
     main {
         flex: 1;
+        min-width: 0;
+        padding-top: 32px;
+        padding-right: 40px;
         display: grid;
+        row-gap: 40px;
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
             "hero hero"
             "receipt welcome"
             "features features";
-        gap: 32px;
+        gap: 56px;
     }
 
     .hero-section {
@@ -636,14 +643,20 @@ body{
 
     .receipt-card {
         grid-area: receipt;
-        transform: none;
+        width: 430px;
+        height: 445px;
+        margin-left: 140px;
+        margin-bottom: 2px;
+        transform: rotate(-2deg);
         margin-top: 0;
-        height: 100%;
     }
 
     .welcome-card {
         grid-area: welcome;
-        transform: none;
+        width: 430px;
+        height: 445px;
+        margin-left: -44px;
+        transform: rotate(2deg);
         margin-top: 0;
     }
 
@@ -658,6 +671,7 @@ body{
     .feature-card-3 {
         flex: 1;
         margin-top: 0;
+        width: auto;
     }
 
     .hero-section {
@@ -673,6 +687,7 @@ body{
 .main-btns {
     width: auto;
     margin-bottom: 0;
+    margin-left: auto;
 }
 
 .main-btns button {
