@@ -117,6 +117,7 @@ body{
     background-color: var(--Neutral-800);
     box-shadow: 0 4px 12px rgba(39, 31, 24, 0.18);
     transform: translateY(-1px);
+    border: 2px solid transparent;
     border-color: var(--Terracotta-600);
 }
 
@@ -488,7 +489,6 @@ body{
 .nav-list{
     list-style-type: none;
     flex-direction: column;
-    
 }
 
 .nav-list a{
