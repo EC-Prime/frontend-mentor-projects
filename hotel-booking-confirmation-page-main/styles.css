@@ -46,7 +46,7 @@ body{
     padding: 12px;
     margin: 0 auto;
     width: 375px;
-    background-color: var(--Neutral-200);
+    background-color: var(--Neutral-50);
 }
 
 .hero-section{
@@ -591,6 +591,8 @@ body{
     body {
         width: 100%;
         max-width: 1440px;
+        margin-left: 0;
+        padding: 0;
     
     }
 
@@ -607,7 +609,6 @@ body{
 
     .sidebar {
         position: static;
-        width: 280px;
         height: auto;
         min-height: 100vh;
         transform: none;
