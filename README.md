@@ -11,7 +11,7 @@ my HTML and CSS foundations, progressing toward full-stack development.
 | Blog Preview Component | Newbie | [Live](https://blog-product-component.netlify.app/) |
 | Nft Card Component | Newbie | [Live](https://nft-card-component77.netlify.app) |
 | Order Summary Component| Newbie | [Live](https://ordersummarycomponent78.netlify.app/) |
-| Testimonial Grid Component | Junior | [Live](https://testimonialgrid19.netlify.app/) |
+| Testimonial Grid Component | Junior | [Live](https://hotel-confirmation-booking-page-14.netlify.app/) |
 ## Tools Used
 - HTML5
 - CSS3
